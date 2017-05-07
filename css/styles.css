@@ -12,10 +12,46 @@ body {
   background-color: transparent;
 }
 
-.center-box {
+.hcenter-box {
   background: transparent;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.vcenter-box {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .media-box {
-  background: transparent;
+  margin: 25px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.media-box > a > img {
+  position: absolute;
+  max-height:100%;
+  display:block;
+  min-width:100%;
+
+  -webkit-transition: all .5s ease; /* Safari and Chrome */
+  -moz-transition: all .5s ease; /* Firefox */
+  -ms-transition: all .5s ease; /* IE 9 */
+  -o-transition: all .5s ease; /* Opera */
+  transition: all .5s ease;
+}
+
+.media-box > a > img:hover {
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.1);
 }
