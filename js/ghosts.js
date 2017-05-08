@@ -1,7 +1,8 @@
 var ghosts = ['ghost-blue-32px.png', 
               'ghost-orange-32px.png',
               'ghost-pink-32px.png',
-              'ghost-red-32px.png'];
+              'ghost-red-32px.png',
+              'pacman-32px.png'];
 (function() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
