@@ -7,6 +7,6 @@ var ghosts = ['ghost-blue-32px.png',
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/png';
     link.rel = 'shortcut icon';
-    link.href = 'img/' + ghosts[Math.floor(Math.random()*ghosts.length)];;
+    link.href = 'img/favicon/' + ghosts[Math.floor(Math.random()*ghosts.length)];;
     document.getElementsByTagName('head')[0].appendChild(link);
 })();
